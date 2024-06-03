@@ -1,0 +1,84 @@
+{
+  "requirements": [
+    {
+      "bonus": false,
+      "description": "1 - Implemente um teste para a função count_ocurrences",
+      "enabled": true,
+      "identifier": "test_counter[count_ocurrences]",
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "2 - Implemente o método read",
+      "enabled": true,
+      "identifier": "test_read_jobs",
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "3 -  Implemente o método get_unique_job_types",
+      "enabled": true,
+      "identifier": "test_get_unique_job_types",
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "4 - Implemente o método filter_by_multiple_criteria",
+      "enabled": true,
+      "identifier": "test_filter_by_multiple_criteria_valid",
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "5 - Implemente o método get_unique_industries",
+      "enabled": true,
+      "identifier": "test_get_unique_industries",
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "6 - Implemente o método get_max_salary",
+      "enabled": true,
+      "identifier": "test_get_max_salary",
+      "order": 6,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "7 - Implemente o método get_min_salary",
+      "enabled": true,
+      "identifier": "test_get_min_salary",
+      "order": 7,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "8 - Implemente a função matches_salary_range",
+      "enabled": true,
+      "identifier": "test_matches_salary_range",
+      "order": 8,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "9 - (Bônus) - Implemente o método filter_by_salary_range",
+      "enabled": true,
+      "identifier": "test_filter_by_salary_range",
+      "order": 9,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "10 - (Bônus) - Read Brazilian File (Testes)",
+      "enabled": true,
+      "identifier": "test_brazilian_jobs[read_brazilian_file]",
+      "order": 11,
+      "skill_ids": []
+    }
+  ]
+}
