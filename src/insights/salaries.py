@@ -31,7 +31,19 @@ class ProcessSalaries(ProcessJobs):
         return min_salary
 
     def matches_salary_range(self, job: Dict, salary: Union[int, str]) -> bool:
-        pass
+        if 'min_salary' not in job or 'max_salary' not in job:
+            raise ValueError('Job does not have salary information')
+        try:
+            min_salary = int(job['min_salary'])
+            max_salary = int(job['max_salary'])
+            mid_salary = float(salary)
+        except (ValueError, TypeError):
+            raise ValueError('Salary information is not valid')
+        if min_salary > max_salary:
+            raise ValueError(
+                'Minimum salary cannot be greater than maximum salary'
+            )
+        return min_salary <= mid_salary <= max_salary
 
     def filter_by_salary_range(
         self, jobs: List[dict], salary: Union[str, int]
