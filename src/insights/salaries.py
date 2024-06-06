@@ -12,8 +12,8 @@ class ProcessSalaries(ProcessJobs):
             if job.get('max_salary') and job['max_salary'].isdigit():
                 salary = int(job['max_salary'])
                 max_salary = (
-                    max(max_salary, salary) 
-                    if max_salary is not None 
+                    max(max_salary, salary)
+                    if max_salary is not None
                     else salary
                 )
         return max_salary
@@ -24,8 +24,8 @@ class ProcessSalaries(ProcessJobs):
             if job.get('min_salary') and job['min_salary'].isdigit():
                 salary = int(job['min_salary'])
                 min_salary = (
-                    min(min_salary, salary) 
-                    if min_salary is not None 
+                    min(min_salary, salary)
+                    if min_salary is not None
                     else salary
                 )
         return min_salary
